@@ -20,10 +20,6 @@ body{
     height: 70px;
 }
 
-.banderas{
-    
-}
-
 .titulo #nombre{
     font-family: georgia;
     font-variant: small-caps;
@@ -82,4 +78,3 @@ body{
     display: flex;
     margin-top: 80px;
 }
-
