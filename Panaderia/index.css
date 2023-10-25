@@ -1,0 +1,85 @@
+body{
+    background-color: #F8E1C3;
+}
+.titulo{
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo #logo{
+    float: left;
+    padding: 30px;
+    margin-left: 50px;
+    height: 120px;
+}
+
+.banderas img{
+    width: 70px;
+    height: 70px;
+}
+
+.banderas{
+    
+}
+
+.titulo #nombre{
+    font-family: georgia;
+    font-variant: small-caps;
+    padding:25px;
+    color: #83510E;
+    font-size: 40px;
+    width: fit-content;
+}
+
+.titulo #bandera{
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.lateral{
+    width: 270px;
+    margin-top:170px;
+    text-align: center;
+    margin-right: 300px;
+}
+
+.mapa iframe{
+    padding: 25px;
+}
+
+.lateral b{
+    padding: 35px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.lateral img{
+    width: 35px;
+    height: 35px;
+    padding: 20px;
+}
+
+.lateral span{
+    font-weight: bold;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr); /* Cambiado a una sola columna en pantallas pequeñas */
+    grid-gap: 30px;
+    width:825px ;
+}
+
+.proceso img{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+}
+
+.contenedor{
+    display: flex;
+    margin-top: 80px;
+}
+
