@@ -1,0 +1,41 @@
+header{
+    background-color: blanchedalmond;
+    margin:0;
+    padding: 0;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+body{
+    margin:0;
+    padding: 0;;
+}
+h3{
+    color:cadetblue;
+    font-size: 2vw;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+nav li{
+    width: fit-content;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
