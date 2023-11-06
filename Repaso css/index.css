@@ -1,0 +1,25 @@
+p{
+    font-weight: bold;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+#encabezado{
+    background-color: green;
+    width: 100%;
+}
+
+.resaltado{
+    border: 1px solid red;
+    font-style: italic;
+}
+
+#contenido .lista{
+    margin: 10px;
+}
+
+#intro p:first-of-type{
+    font-weight: bold;
+}
