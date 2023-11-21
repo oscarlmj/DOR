@@ -1,20 +1,28 @@
 body{
     padding: 0px;
-    margin: 0px;
-    display: flex;
+    margin: 0 auto;
     justify-content: center;
+    width: 920px;
 }
+
 header{
     background-image: linear-gradient(to bottom, #3e9722, #62ab29, #84bf32, #a7d23b, #cae646);
-    position: fixed;
     width: 920px;
-    padding:20px 20px 0px 20px;
+    padding:20px 20px 20px 20px;
     display: flex;
     justify-content: space-between;
+    border-radius: 15px;
 }
 
 header h3{
-    margin: 0px;
+    margin-bottom: -50px;
+    margin-top: 35px;
+}
+
+nav{
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: -15px;
 }
 
 ul{
@@ -23,6 +31,7 @@ ul{
     gap: 15px;
     justify-content: flex-end;
     margin-top: 0px;
+    margin-bottom: 0;
 }
 
 ul li{
@@ -32,7 +41,60 @@ ul li{
     font-weight: bolder;
 }
 
-#fijado
+li#fijado
 {
-    background-color: orange;
+    background-color: #e58c24;
+}
+
+#izq{
+    width: 220px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+#contenido h4{
+    background-color: #3c74e6;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+#izq input{
+    margin-bottom: 5px;
+}
+
+#izq :last-of-type input{
+    margin-bottom: 8px;
+}
+
+#contenido a{
+    color: #3e9722;
+    
+}
+
+#izq input[type=button]{
+    margin-bottom: 5px;
+}
+
+#unidades label{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#unidades a{
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+#contenido{
+    display: flex;
+}
+
+#centro{
+    width: 480px;
+    padding-left: 20px;
+    margin: 10px;
 }
