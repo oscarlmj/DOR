@@ -1,12 +1,11 @@
 body{
-    padding: 0px;
     margin: 0 auto;
     justify-content: center;
     width: 920px;
 }
 
 header{
-    background-image: linear-gradient(to bottom, #3e9722, #62ab29, #84bf32, #a7d23b, #cae646);
+    background-image: linear-gradient(to bottom, #62ab29, #cae646,  white);
     width: 920px;
     padding:20px 20px 20px 20px;
     display: flex;
@@ -14,34 +13,38 @@ header{
     border-radius: 15px;
 }
 
-header h3{
-    margin-bottom: -50px;
+header #logo{
+    margin-bottom: -35px;
+}
+
+header h2{
+    margin-bottom: -20px;
     margin-top: 35px;
 }
 
-nav{
+header nav{
     display: flex;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-bottom: -15px;
 }
 
-ul{
+header ul{
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 5px;
     justify-content: flex-end;
     margin-top: 0px;
     margin-bottom: 0;
 }
 
-ul li{
+ header ul li{
     background-color: rgba(255, 255, 255, 0.71);
     border-radius: 7px;
     padding: 10px 20px;
     font-weight: bolder;
 }
 
-li#fijado
+ header li:hover
 {
     background-color: #e58c24;
 }
@@ -91,10 +94,76 @@ li#fijado
 
 #contenido{
     display: flex;
+    width: 920px;
+    padding: 20px;
+    border-top:2px solid #cae646;
+    border-left-width:20%;
+    border-left: 2px solid #cae646;
+    border-right: 2px solid #cae646;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 #centro{
     width: 480px;
     padding-left: 20px;
     margin: 10px;
+}
+
+.bienvenida{
+    border-bottom: 2px dotted lightgray;
+}
+
+.bienvenida img{
+    float: left;
+    margin-right: 20px;
+}
+
+.bienvenida span{
+    text-transform: lowercase;
+    float: inline-end;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.estilos span{
+    text-transform: lowercase;
+    float: inline-end;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.estilos{
+    border-bottom: 2px dotted lightgray;
+}
+
+#der{
+    width: 180px;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+#der img{
+    padding: 30px;
+}
+
+#enlaces{
+    display: flex;
+    flex-direction: column;
+}
+
+#enlaces li{
+    list-style-type: disc;
+    margin-bottom: 5px
+}
+
+footer{
+    text-align: center;
+    border-top:2px solid #cae646;
+    border-left: 2px solid #cae646;
+    border-right: 2px solid #cae646;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 960px;
+    height: ;
 }
