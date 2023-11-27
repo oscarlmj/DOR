@@ -9,22 +9,27 @@
 </head>
 <body>
 
-    <h1>Lista de Tareas</h1>
 
-    <ul id="taskList">
-        <!-- Las tareas se agregarán dinámicamente aquí -->
-    </ul>
+    <form id="nuevaTarea">
+        <h4>Nueva tarea</h4>
 
-    <form id="taskForm">
         <label for="tarea">
-            <input type="text" id="newTask" placeholder="Nueva tarea" required>
+            <input type="text" id="tarea" placeholder="Nueva tarea" required>
         </label>
 
         <label for="">
-            <input type="date">
+            <input type="datetime-local">
         </label>
 
         <input type="submit" value="Agregar tarea">
     </form>
+
+
+
+    <ul id="lista">
+        <h1>Lista de Tareas</h1>
+
+        <!-- Las tareas se agregarán dinámicamente aquí -->
+    </ul>
 </body>
 </html>
