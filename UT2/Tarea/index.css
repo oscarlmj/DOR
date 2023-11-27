@@ -95,13 +95,7 @@ header ul{
 #contenido{
     display: flex;
     width: 920px;
-    padding: 20px;
-    border-top:2px solid #cae646;
-    border-left-width:20%;
-    border-left: 2px solid #cae646;
-    border-right: 2px solid #cae646;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    padding: 0px 20px 20px 20px;
 }
 
 #centro{
@@ -165,5 +159,15 @@ footer{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     width: 960px;
-    height: ;
+}
+
+.borde{
+    height: 20px;
+    border-top:2px solid #cae646;
+    border-left: 2px solid #cae646;
+    border-right: 2px solid #cae646;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 920px;
+    padding: 20px 20px 0px 20px;
 }

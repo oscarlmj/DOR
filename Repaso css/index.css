@@ -23,3 +23,52 @@ a:hover{
 #intro p:first-of-type{
     font-weight: bold;
 }
+
+hr{
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+#intro2 p:last-of-type{
+    font-weight: bold;
+}
+
+button + a{
+    background-color: blue;
+    color: white;
+}
+
+.lista2 li:first-child{
+    background-color: yellow;
+}
+
+.border li:last-child{
+    border: 1px green solid;
+}
+
+ul a:first-child{
+    font-weight: bold;
+}
+
+.impares li:nth-child(odd)
+{
+    background-color: lightslategray;
+}
+
+.dotted li:nth-child(even)
+{
+    border: 2px dotted blue;
+}
+
+#principal p:first-child{
+    border: 1px solid red;
+    margin: 20px;
+}
+
+#principal2 p:last-child{
+    background-color: yellow;
+}
+
+.importante a{
+
+}
