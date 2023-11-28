@@ -1,77 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-h1 {
-    text-align: center;
-}
-
-ul {
-    list-style-type: none;
+body{
     padding: 0;
+    margin: 0;
+}
+header{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    background-color: #182C3A;
+    margin-bottom: 15px;
 }
 
-li {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
 
-button {
-    cursor: pointer;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input[type="text"] {
-    flex: 1;
+header h3{
     padding: 8px;
+    border-radius: 20px;
+    color: #4884AF;
+    font-style: italic;
 }
 
-input[type="submit"] {
-    padding: 8px 16px;
-    background-color: #4c95af;
-    color: white;
+#contenido{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="submit"]{
+    width: max-content;
+    background-color: #4984AE;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    padding: 8.5px 16px;
-    background-color: #6cb5d0;
-    color: white;
-    border: 1px solid black;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 8px;
+    border-radius: 19px;
 }
 
 input[type="date"]{
+    border-radius: 18px;
     padding: 8px;
-}
-
-input{
-    margin-top: 15px;
-}
-
-
-span{
-    margin-right: 30px;
-}
-
-#finalizar{
-    background-color: green;
-    color: black;
-    font-weight: bold;
-    border: none;
 }

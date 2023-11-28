@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tareas</title>
-    <script src="./usabilidad.js"></script>
-    <link rel="stylesheet" href="./usabilidad.css">
+    <link rel="stylesheet" href="usabilidad.css">
+    <script src="usabilidad.js"></script>
+    <title>Lista de tareas</title>
 </head>
 <body>
+    <header>
+        <h3>Tu lista de tareas</h3>
+    </header>
 
+    <div id="contenido">
+        <div id="form">
+            <form action="" name="formulario">
+                    <input type="text" name="tarea" id="tarea" placeholder="Nueva tarea">
+                <label>
+                    Fecha
+                    <input type="date" name="fecha" id="fecha">
+                </label>
+                <input type="submit" value="Agregar tarea">
+            </form>
+        </div>
+    
+        <div id="lista">
+            <ol id="listaTareas">
 
-    <form id="nuevaTarea">
-        <h4>Nueva tarea</h4>
-
-        <label for="tarea">
-            <input type="text" id="tarea" placeholder="Nueva tarea" required>
-        </label>
-
-        <label for="">
-            <input type="datetime-local">
-        </label>
-
-        <input type="submit" value="Agregar tarea">
-    </form>
-
-
-
-    <ul id="lista">
-        <h1>Lista de Tareas</h1>
-
-        <!-- Las tareas se agregarán dinámicamente aquí -->
-    </ul>
+            </ol>
+        </div>
+    
+    </div>
 </body>
 </html>

@@ -1,25 +1,14 @@
+function agregarTarea() {
+    var tareaInput = document.getElementById('tarea');
+    var fechaInput = document.getElementById('fecha');
+    var listaTareas = document.getElementById('listaTareas');
 
-document.addEventListener('DOMContentLoaded', function () {
-let lista=document.getElementById("lista");
-let formulario=document.getElementById("nuevaTarea");
-let tarea=document.getElementById("tarea");
-let fecha=document.getElementById("fecha");
+    var nuevaTarea = document.createElement('li');
+    nuevaTarea.textContent = tareaInput.value + ' - ' + fechaInput.value;
 
-formulario.addEventListener('submit', function(event){
-    event.preventDefault();
-    if(tarea.value.trim()==='')
-    {
-        alert("Introduce una tarea");
-    }
+    listaTareas.appendChild(nuevaTarea);
 
-    let nuevaTarea=document.createElement('td');
-    nuevaTarea.innerHTML=`
-    <span>${tarea.value}</span>
-    <button>Editar</button>
-    <button>Eliminar</button>
-    <button id="finalizar">Finalizar</button>
-    `;
-
-    lista.appendChild(nuevaTarea);
-})
-})
+    // Limpiar los campos del formulario después de agregar la tarea
+    tareaInput.value = '';
+    fechaInput.value = '';
+}
