@@ -1,37 +1,37 @@
-body{
+body {
     padding: 0;
     margin: 0;
+    height: 100%;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     background-color: #182C3A;
     margin-bottom: 15px;
 }
 
-
-header h3{
+header h3 {
     padding: 8px;
     border-radius: 20px;
     color: #4884AF;
     font-style: italic;
 }
 
-#contenido{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+#contenido {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     width: max-content;
     background-color: #4984AE;
     border: none;
@@ -39,7 +39,44 @@ input[type="submit"]{
     border-radius: 19px;
 }
 
-input[type="date"]{
-    border-radius: 18px;
-    padding: 8px;
+#tarea {
+    padding: 12.5px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+li {
+    display: flex;
+    padding: 20px; /* Reducido para mejorar la apariencia en dispositivos más pequeños */
+    border-radius: 20px;
+    list-style-type: none;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-direction: column;
+    margin-top: 10px; /* Reducido para mejorar la apariencia en dispositivos más pequeños */
+    text-align: center;
+}
+
+/* Agregado un estilo básico para mejorar la apariencia en dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+    #contenido {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    li {
+        width: fit-content;
+        align-self: center;
+    }
+
+    ol{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
 }
