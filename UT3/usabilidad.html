@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="usabilidad.css">
-    <script src="usabilidad.js"></script>
+    <script src="./usabilidad.js"></script>
+    <link rel="stylesheet" href="./usabilidad.css">
     <title>Lista de tareas</title>
 </head>
 <body>
@@ -14,22 +14,28 @@
 
     <div id="contenido">
         <div id="form">
-            <form action="" name="formulario">
-                    <input type="text" name="tarea" id="tarea" placeholder="Nueva tarea">
-                <label>
-                    Fecha
-                    <input type="date" name="fecha" id="fecha">
+            <form action="" name="formulario" id="formulario">
+                <input type="text" name="tarea" id="tarea" placeholder="Nueva tarea">
+                <label for="tipo">
+                    Tipo de tarea
+                    <select name="tipo" id="tipo">
+                        <option value="clase">Clase</option>
+                        <option value="deporte">Deporte</option>
+                        <option value="ocio">Ocio</option>
+                    </select>
                 </label>
-                <input type="submit" value="Agregar tarea">
+                <input type="button" value="Agregar tarea" onclick="agregarTarea()">
             </form>
         </div>
     
         <div id="lista">
             <ol id="listaTareas">
-
+                
             </ol>
         </div>
     
     </div>
+
+
 </body>
 </html>
