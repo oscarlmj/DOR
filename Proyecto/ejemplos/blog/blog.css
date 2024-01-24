@@ -164,3 +164,9 @@ h6, .h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+.card{
+  background-color: gainsboro;
+  height: 50px;
+  padding: 0px;
+}
