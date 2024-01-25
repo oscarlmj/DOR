@@ -45,6 +45,8 @@ body {
 .jumbotron {
   text-align: center;
   border-bottom: .05rem solid #e5e5e5;
+  background-color: gainsboro;
+  padding: 10px;
 }
 .jumbotron .btn {
   padding: .75rem 1.5rem;
